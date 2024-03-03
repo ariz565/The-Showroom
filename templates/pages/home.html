@@ -11,8 +11,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static
-    'css/bootstrap.min.css' %}"
+      href="{% static 'css/bootstrap.min.css' %}"
     />
     <link
       rel="stylesheet"
@@ -150,7 +149,8 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand company-logo" href="index.html">
-            <img src="img/logos/black-logo.png" alt="logo" />
+            <img src="{% static 'img/logos/black-logo.png' %}" alt="logo" /> 
+
           </a>
           <button
             class="navbar-toggler"
@@ -1059,23 +1059,24 @@
                 <div class="carbox-overlap-wrapper">
                   <div class="overlap-box">
                     <div class="overlap-btns-area">
-                      <div class="car-magnify-gallery">
-                        <a href="img/car/car-1.jpg" class="overlap-btn">
-                          <i class="fa fa-expand"></i>
-                          <img class="hidden" src="img/car/car-1.jpg" />
-                        </a>
-                        <a href="img/car/car-2.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-2.jpg" />
-                        </a>
-                        <a href="img/car/car-3.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-3.jpg" />
-                        </a>
-                        <a href="img/car/car-4.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-4.jpg" />
-                        </a>
-                        <a href="img/car/car-5.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-5.jpg" />
-                        </a>
+                        <div class="car-magnify-gallery">
+                            <a href="{% static 'img/car/car-1.jpg' %}" class="overlap-btn">
+                                <i class="fa fa-expand"></i>
+                                <img class="hidden" src="{% static 'img/car/car-1.jpg' %}" />
+                            </a>
+                            <a href="{% static 'img/car/car-2.jpg' %}" class="hidden">
+                                <img class="hidden" src="{% static 'img/car/car-2.jpg' %}" />
+                            </a>
+                            <a href="{% static 'img/car/car-3.jpg' %}" class="hidden">
+                                <img class="hidden" src="{% static 'img/car/car-3.jpg' %}" />
+                            </a>
+                            <a href="{% static 'img/car/car-4.jpg' %}" class="hidden">
+                                <img class="hidden" src="{% static 'img/car/car-4.jpg' %}" />
+                            </a>
+                            <a href="{% static 'img/car/car-5.jpg' %}" class="hidden">
+                                <img class="hidden" src="{% static 'img/car/car-5.jpg' %}" />
+                            </a>
+                        </div>                        
                       </div>
                     </div>
                   </div>
@@ -1106,11 +1107,12 @@
               <div class="car-thumbnail">
                 <a href="car-details.html" class="car-img">
                   <div class="tag">For Sale</div>
-                  <img
-                    class="d-block w-100"
-                    src="img/car/car-3.jpg"
-                    alt="car"
-                  />
+                  <img 
+    class="d-block w-100" 
+    src="{% static 'img/car/car-3.jpg' %}" 
+    alt="car" 
+/>
+
                   <div class="facilities-list clearfix">
                     <ul>
                       <li>
@@ -1130,22 +1132,22 @@
                   <div class="overlap-box">
                     <div class="overlap-btns-area">
                       <div class="car-magnify-gallery">
-                        <a href="img/car/car-1.jpg" class="overlap-btn">
-                          <i class="fa fa-expand"></i>
-                          <img class="hidden" src="img/car/car-1.jpg" />
+                        <a href="{% static 'img/car/car-1.jpg' %}" class="overlap-btn">
+                            <i class="fa fa-expand"></i>
+                            <img class="hidden" src="{% static 'img/car/car-1.jpg' %}" />
                         </a>
-                        <a href="img/car/car-2.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-2.jpg" />
+                        <a href="{% static 'img/car/car-2.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-2.jpg' %}" />
                         </a>
-                        <a href="img/car/car-3.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-3.jpg" />
+                        <a href="{% static 'img/car/car-3.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-3.jpg' %}" />
                         </a>
-                        <a href="img/car/car-4.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-4.jpg" />
+                        <a href="{% static 'img/car/car-4.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-4.jpg' %}" />
                         </a>
-                        <a href="img/car/car-5.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-5.jpg" />
-                        </a>
+                        <a href="{% static 'img/car/car-5.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-5.jpg' %}" />
+                        </a>                        
                       </div>
                     </div>
                   </div>
@@ -1176,11 +1178,12 @@
               <div class="car-thumbnail">
                 <a href="car-details.html" class="car-img">
                   <div class="tag">For Sale</div>
-                  <img
-                    class="d-block w-100"
-                    src="img/car/car-4.jpg"
-                    alt="car"
-                  />
+                  <img 
+                  class="d-block w-100" 
+                  src="{% static 'img/car/car-4.jpg' %}" 
+                  alt="car" 
+              />
+              
                   <div class="facilities-list clearfix">
                     <ul>
                       <li>
@@ -1200,22 +1203,23 @@
                   <div class="overlap-box">
                     <div class="overlap-btns-area">
                       <div class="car-magnify-gallery">
-                        <a href="img/car/car-1.jpg" class="overlap-btn">
-                          <i class="fa fa-expand"></i>
-                          <img class="hidden" src="img/car/car-1.jpg" />
+                        <a href="{% static 'img/car/car-1.jpg' %}" class="overlap-btn">
+                            <i class="fa fa-expand"></i>
+                            <img class="hidden" src="{% static 'img/car/car-1.jpg' %}" />
                         </a>
-                        <a href="img/car/car-2.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-2.jpg" />
+                        <a href="{% static 'img/car/car-2.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-2.jpg' %}" />
                         </a>
-                        <a href="img/car/car-3.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-3.jpg" />
+                        <a href="{% static 'img/car/car-3.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-3.jpg' %}" />
                         </a>
-                        <a href="img/car/car-4.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-4.jpg" />
+                        <a href="{% static 'img/car/car-4.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-4.jpg' %}" />
                         </a>
-                        <a href="img/car/car-5.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-5.jpg" />
+                        <a href="{% static 'img/car/car-5.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-5.jpg' %}" />
                         </a>
+                        
                       </div>
                     </div>
                   </div>
@@ -1246,11 +1250,12 @@
               <div class="car-thumbnail">
                 <a href="car-details.html" class="car-img">
                   <div class="tag">For Sale</div>
-                  <img
-                    class="d-block w-100"
-                    src="img/car/car-5.jpg"
-                    alt="car"
-                  />
+                  <img 
+    class="d-block w-100" 
+    src="{% static 'img/car/car-5.jpg' %}" 
+    alt="car" 
+/>
+
                   <div class="facilities-list clearfix">
                     <ul>
                       <li>
@@ -1270,21 +1275,23 @@
                   <div class="overlap-box">
                     <div class="overlap-btns-area">
                       <div class="car-magnify-gallery">
-                        <a href="img/car/car-1.jpg" class="overlap-btn">
-                          <i class="fa fa-expand"></i>
-                          <img class="hidden" src="img/car/car-1.jpg" />
+                        <a href="{% static 'img/car/car-1.jpg' %}" class="overlap-btn">
+                            <i class="fa fa-expand"></i>
+                            <img class="hidden" src="{% static 'img/car/car-1.jpg' %}" />
                         </a>
-                        <a href="img/car/car-2.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-2.jpg" />
+                        <a href="{% static 'img/car/car-2.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-2.jpg' %}" />
                         </a>
-                        <a href="img/car/car-3.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-3.jpg" />
+                        <a href="{% static 'img/car/car-3.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-3.jpg' %}" />
                         </a>
-                        <a href="img/car/car-4.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-4.jpg" />
+                        <a href="{% static 'img/car/car-4.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-4.jpg' %}" />
                         </a>
-                        <a href="img/car/car-5.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-5.jpg" />
+                        <a href="{% static 'img/car/car-5.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-5.jpg' %}" />
+                        </a>
+                        
                         </a>
                       </div>
                     </div>
@@ -1316,11 +1323,12 @@
               <div class="car-thumbnail">
                 <a href="car-details.html" class="car-img">
                   <div class="tag">For Sale</div>
-                  <img
-                    class="d-block w-100"
-                    src="img/car/car-6.jpg"
-                    alt="car"
-                  />
+                  <img 
+    class="d-block w-100" 
+    src="{% static 'img/car/car-6.jpg' %}" 
+    alt="car" 
+/>
+
                   <div class="facilities-list clearfix">
                     <ul>
                       <li>
@@ -1340,22 +1348,23 @@
                   <div class="overlap-box">
                     <div class="overlap-btns-area">
                       <div class="car-magnify-gallery">
-                        <a href="img/car/car-1.jpg" class="overlap-btn">
-                          <i class="fa fa-expand"></i>
-                          <img class="hidden" src="img/car/car-1.jpg" />
+                        <a href="{% static 'img/car/car-1.jpg' %}" class="overlap-btn">
+                            <i class="fa fa-expand"></i>
+                            <img class="hidden" src="{% static 'img/car/car-1.jpg' %}" />
                         </a>
-                        <a href="img/car/car-2.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-2.jpg" />
+                        <a href="{% static 'img/car/car-2.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-2.jpg' %}" />
                         </a>
-                        <a href="img/car/car-3.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-3.jpg" />
+                        <a href="{% static 'img/car/car-3.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-3.jpg' %}" />
                         </a>
-                        <a href="img/car/car-4.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-4.jpg" />
+                        <a href="{% static 'img/car/car-4.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-4.jpg' %}" />
                         </a>
-                        <a href="img/car/car-5.jpg" class="hidden">
-                          <img class="hidden" src="img/car/car-5.jpg" />
+                        <a href="{% static 'img/car/car-5.jpg' %}" class="hidden">
+                            <img class="hidden" src="{% static 'img/car/car-5.jpg' %}" />
                         </a>
+                        
                       </div>
                     </div>
                   </div>
@@ -1406,13 +1415,14 @@
             <div class="slick-slide-item">
               <div class="team-1">
                 <div class="photo">
-                  <a href="#">
-                    <img
-                      src="img/avatar/avatar-12.jpg"
-                      alt="team-1"
-                      class="img-fluid"
-                    />
-                  </a>
+                    <a href="#">
+                        <img 
+                            src="{% static 'img/avatar/avatar-12.jpg' %}" 
+                            alt="team-1" 
+                            class="img-fluid"
+                        />
+                    </a>
+                    
                   <div class="social-list clearfix">
                     <a href="#" class="facebook-bg"
                       ><i class="fa fa-facebook"></i
