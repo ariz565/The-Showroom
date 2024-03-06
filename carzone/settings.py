@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME' : 'carzone_db',
         'USER' : 'postgres',
-        'PASSWORD': 'your db password here',
+        'PASSWORD': 'your pass here',
         'HOST' : 'localhost',
         'PORT': '5432',
     }
