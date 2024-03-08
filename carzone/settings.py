@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'cars.apps.CarsConfig',
     'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME' : 'carzone_db',
         'USER' : 'postgres',
-        'PASSWORD': 'your pass here',
+        'PASSWORD': '@Sherwani#0565',
         'HOST' : 'localhost',
         'PORT': '5432',
     }
