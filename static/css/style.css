@@ -146,68 +146,68 @@ ul {
 }
 
 .delay-02s {
-  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
 }
 
 .delay-03s {
-  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
 }
 
 .delay-04s {
-  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
 }
 
 .delay-05s {
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 
 .delay-06s {
-  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
 }
 
 .delay-07s {
-  -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
 }
 
 .delay-08s {
-  -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
 }
 
 .delay-09s {
-  -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
 }
 
 .delay-1s {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 .delay-12s {
-  -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
 }
 
 .delay-15s {
-  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
 }
 
 .delay-17s {
-  -webkit-animation-delay: 1.7s;
   animation-delay: 1.7s;
+  -webkit-animation-delay: 1.7s;
 }
 
 .delay-20s {
-  -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 }
 
 .filteriz-navigation .btn {
@@ -354,56 +354,56 @@ button:focus {
 
 /*Custom Anmation*/
 .bgburns .slides li:nth-of-type(odd) .slide-background {
-  -webkit-animation: bgburnsEast 25s linear infinite alternate;
   animation: bgburnsEast 25s linear infinite alternate;
+  -webkit-animation: bgburnsEast 25s linear infinite alternate;
 }
 
 .bgburns .slides li:nth-of-type(even) .slide-background {
-  -webkit-animation: bgburnsWest 25s linear infinite alternate;
   animation: bgburnsWest 25s linear infinite alternate;
+  -webkit-animation: bgburnsWest 25s linear infinite alternate;
 }
 
 @keyframes bgburnsEast {
   from {
-    -webkit-transform: scale(1) translateX(0);
     transform: scale(1) translateX(0);
+    -webkit-transform: scale(1) translateX(0);
   }
   to {
-    -webkit-transform: scale(1.2) translateX(100px);
     transform: scale(1.2) translateX(100px);
+    -webkit-transform: scale(1.2) translateX(100px);
   }
 }
 
 @-webkit-keyframes bgburnsEast {
   from {
-    -webkit-transform: scale(1) translateX(0);
     transform: scale(1) translateX(0);
+    -webkit-transform: scale(1) translateX(0);
   }
   to {
-    -webkit-transform: scale(1.2) translateX(100px);
     transform: scale(1.2) translateX(100px);
+    -webkit-transform: scale(1.2) translateX(100px);
   }
 }
 
 @keyframes bgburnsWest {
   from {
-    -webkit-transform: scale(1) translateX(0);
     transform: scale(1) translateX(0);
+    -webkit-transform: scale(1) translateX(0);
   }
   to {
-    -webkit-transform: scale(1.2) translateX(-100px);
     transform: scale(1.2) translateX(-100px);
+    -webkit-transform: scale(1.2) translateX(-100px);
   }
 }
 
 @-webkit-keyframes bgburnsWest {
   from {
-    -webkit-transform: scale(1) translateX(0);
     transform: scale(1) translateX(0);
+    -webkit-transform: scale(1) translateX(0);
   }
   to {
-    -webkit-transform: scale(1.2) translateX(-100px);
     transform: scale(1.2) translateX(-100px);
+    -webkit-transform: scale(1.2) translateX(-100px);
   }
 }
 
@@ -425,8 +425,8 @@ button:focus {
   animation-fill-mode: both;
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
   cursor: pointer;
   color: #fff;
   padding: 10px 11px;
@@ -941,9 +941,6 @@ input[type="checkbox"]:checked + label:before {
   top: 0;
   bottom: 0;
   width: 0;
-}
-
-.banner-bg {
 }
 
 .item-bg {
@@ -4826,8 +4823,8 @@ footer {
 
 .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #ccc !important;
-  -ms-filter: "alpha(opacity=20)";
   filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)";
 }
 
 .option-bar .btn-light:hover {
@@ -9882,7 +9879,6 @@ textarea::-webkit-input-placeholder {
   line-height: 49px;
   color: #f0151f;
 }
-
 a.nav-link.active {
   color: #f0151f !important;
 }
