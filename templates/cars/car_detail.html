@@ -1,7 +1,5 @@
-{% extends 'base.html' %} {% block title %} | {{single_car.car_title}}
-
-<!--    -->
-{%endblock %} {% block content %} {% load static %} {% load humanize %}
+{% extends 'base.html' %} {% block title %} | {{single_car.car_title}} {%
+endblock %} {% block content %} {% load static %} {% load humanize %}
 
 <!-- Sub banner start -->
 <div class="sub-banner overview-bgi">
@@ -296,14 +294,9 @@
                             name="first_name"
                             class="form-control"
                             placeholder="First Name"
-                            {%
-                            if
-                            user.is_authenticated
-                            %}
+                            {% if user.is_authenticate %}
                             value="{{user.first_name}}"
-                            {%
-                            endif
-                            %}
+                            {% endif %}
                             required
                           />
                         </div>
@@ -313,14 +306,10 @@
                             name="last_name"
                             class="form-control"
                             placeholder="Last Name"
-                            {%
-                            if
-                            user.is_authenticated
-                            %}
+                            {% if user.is_authenticate %}
                             value="{{user.last_name}}"
-                            {%
-                            endif
-                            %}
+                            {% endif %}
+                            
                             required
                           />
                         </div>
@@ -389,21 +378,16 @@
                           <label for="name" class="col-form-label"
                             >You can reach me by email at</label
                           >
+                          {% if user.is_authenticated %}
                           <input
                             type="email"
                             name="email"
                             class="form-control"
                             placeholder="Email Address"
-                            {%
-                            if
-                            user.is_authenticated
-                            %}
-                            value="{{user.email}}"
-                            {%
-                            endif
-                            %}
+                            value="{{ user.email }}"
                             required
                           />
+                          {% endif %}
                         </div>
                         <div class="col">
                           <label for="phone" class="col-form-label"
