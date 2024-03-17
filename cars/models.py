@@ -60,9 +60,8 @@ class Car(models.Model):
         ('WY', 'Wyoming'),
     )
 
-    year_choice = []
-    for r in range(2000, (datetime.now().year+1)):
-        year_choice.append((r,r))
+    year_choice = [(r, r) for r in range(2000, datetime.now().year + 1)] 
+
 
     features_choices = (
         ('Cruise Control', 'Cruise Control'),
@@ -103,6 +102,7 @@ class Car(models.Model):
     car_photo_3 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     car_photo_4 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     # features = MultiSelectField(choices=features_choices)
+    
     body_style = models.CharField(max_length=100)
     engine = models.CharField(max_length=100)
     transmission = models.CharField(max_length=100)
